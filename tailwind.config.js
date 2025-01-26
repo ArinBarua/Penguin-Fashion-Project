@@ -2,7 +2,14 @@
 module.exports = {
     content: ["./src/**/*.{html,js}"],
     theme: {
-      extend: {},
+        fontFamily: {
+            'bebas-neue-regular': ["Bebas Neue", 'serif'],
+            'roboto-sec': ["Roboto", 'serif'],
+        },
+        extend: {
+            'title-black': '#363958','light-black': '#3E3E3E',
+        },
     },
+
     plugins: [],
   }
