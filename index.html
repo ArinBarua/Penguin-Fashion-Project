@@ -5,57 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://kit.fontawesome.com/48e4e65e71.js" crossorigin="anonymous"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        fontFamily: {
-            bebasneueregular: ["Bebas Neue", 'serif'],
-            robotosec: ["Roboto", 'serif'],
-        },
-        extend: {
-          colors: {
-            clifford: '#da373d',
-            titleblack: '#363958',lightblack: '#3E3E3E',
-          }
-        }
-      }
-    }
-  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <style>
+    .bebas-neue {
+        font-family: "Bebas Neue", serif;
+    }
+    .roboto-sec {
+        font-family: "Roboto", serif;
+    }
+  </style>
 </head>
-<body class="p-0">
-    <section class="bg-orange-50">
+<body class="font-roboto-sec p-0">
+    <header class="bg-[#FFFBF0]">
         <nav></nav>
-        <!-- banner starts -->
-         <div class="flex items-center justify-between px-20 pb-24">
-            <div>
-                <h1 class="bebasneueregular text-6xl font-medium uppercase"><span style="color: #FABE4C;">Be the Penguins</span><br><span style="color: #363958;">of Winter</span></h1>
-                <p class="robotosec text-base font-normal light-black pr-10"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Dolor perferendis amet consequatur, <br>placeat omnis deleniti reprehenderit <br>tenetur aperiam tempore eveniet <br>possimus voluptatem error corrupti, <br>esse similique exercitationem <br>eum doloribus modi.</p>
-                <a href=""><button class="bg-gradient-to-t from-lime-600 to-lime-500 px-8 py-4 mt-5 border border-none rounded-md text-white robotosec font-semibold uppercase"><i class="fa-solid fa-cart-shopping"> Buy Now</i></button></a>
-            </div>
-            <div>
-                <img src="./images/model.png" alt="image of a model">
-            </div>
-         </div>
-    </section>
+            <!-- banner starts -->
+             <div class="md:flex items-center justify-between px-20 pb-24">
+                <div>
+                    <h1 class="font-bebas-neue text-6xl font-medium uppercase"><span style="color: #FABE4C;">Be the Penguins</span><br><span style="color: #363958;">of Winter</span></h1>
+                    <p class="font-roboto-sec text-base font-normal text-[#3E3E3E] pr-10"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Dolor perferendis amet consequatur, <br>placeat omnis deleniti reprehenderit <br>tenetur aperiam tempore eveniet <br>possimus voluptatem error corrupti, <br>esse similique exercitationem <br>eum doloribus modi.</p>
+                    <a href=""><button class="bg-gradient-to-t from-lime-600 to-lime-500 px-8 py-4 mt-5 border border-none rounded-md text-white font-roboto-sec font-semibold uppercase"><i class="fa-solid fa-cart-shopping font-roboto-sec"> Buy Now</i></button></a>
+                </div>
+                <div>
+                    <img src="./images/model.png" alt="image of a model">
+                </div>
+             </div>
+    </header>
+
     <main>
         <!-- Women Section Starts -->
-        <section class="px-20 my-12">
+        <section class="md:px-20 md:my-12">
             <div>
-                <h2 class="Bebas Neue text-5xl font-medium uppercase titleblack">Women Jacket</h2>
+                <h2 class="font-bebas-neue text-[#363958] text-5xl font-medium uppercase titleblack md:items-center md:justify-center">Women Jacket</h2>
             </div>
-            <div class="flex my-7 gap-5">
+            <div class="md:flex my-7 gap-5">
                 <div class="border-none rounded-2xl shadow-xl p-3">
                     <div class="bg-gray-100 px-14 py-10 border-0 rounded-2xl">
                         <img src="./images/jacket-1.png" alt="">
                     </div>
-                    <h3 class="Bebas Neue text-3xl font-medium titleblack mt-5">Yellow Coat Jacket</h3>
-                    <p class="mt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic officia veritatis ea odit beatae eveniet ad distinctio nam velit ex quos cupiditate vel quo nemo commodi, voluptatibus veniam provident! Eum?</p>
+                    <h3 class="font-bebas-neue text-3xl text-[#363958] font-medium titleblack mt-5">Yellow Coat Jacket</h3>
+                    <p class="font-roboto-sec text-base font-normal text-[#3E3E3E] mt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic officia veritatis ea odit beatae eveniet ad distinctio nam velit ex quos cupiditate vel quo nemo commodi, voluptatibus veniam provident! Eum?</p>
                     <div class="flex items-center justify-between">
-                        <p class="Bebas Neue text-3xl font-medium #FABE4C mt-5">$234</p>
+                        <p class="font-bebas-neue text-3xl text-[#FABE4C] font-medium #FABE4C mt-5">$234</p>
                         <a href=""><button class="bg-gradient-to-t from-lime-600 to-lime-500 px-8 py-4 mt-5 border border-none rounded-md text-white robotosec text-sm font-semibold uppercase"><i class="fa-solid fa-cart-shopping"> Buy Now</i></button></a>
                     </div>
                 </div>
@@ -63,10 +56,10 @@
                     <div class="bg-gray-100 px-14 py-10 border-0 rounded-2xl">
                         <img src="./images/jacket-2.png" alt="">
                     </div>
-                    <h3 class="Bebas Neue text-3xl font-medium titleblack mt-5">Ladies Jacket</h3>
-                    <p class="mt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic officia veritatis ea odit beatae eveniet ad distinctio nam velit ex quos cupiditate vel quo nemo commodi, voluptatibus veniam provident! Eum?</p>
+                    <h3 class="font-bebas-neue text-3xl text-[#363958] font-medium titleblack mt-5">Ladies Jacket</h3>
+                    <p class="font-roboto-sec text-base font-normal text-[#3E3E3E] mt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic officia veritatis ea odit beatae eveniet ad distinctio nam velit ex quos cupiditate vel quo nemo commodi, voluptatibus veniam provident! Eum?</p>
                     <div class="flex items-center justify-between">
-                        <p class="Bebas Neue text-3xl font-medium #FABE4C mt-5">$234</p>
+                        <p class="font-bebas-neue text-3xl text-[#FABE4C] font-medium #FABE4C mt-5">$234</p>
                         <a href=""><button class="bg-gradient-to-t from-lime-600 to-lime-500 px-8 py-4 mt-5 border border-none rounded-md text-white robotosec text-sm font-semibold uppercase"><i class="fa-solid fa-cart-shopping"> Buy Now</i></button></a>
                     </div>
                 </div>
@@ -74,21 +67,21 @@
                     <div class="bg-gray-100 px-14 py-10 border-0 rounded-2xl">
                         <img src="./images/jacket-3.png" alt="">
                     </div>
-                    <h3 class="Bebas Neue text-3xl font-medium titleblack mt-5">Women Leather Jacket</h3>
-                    <p class="mt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic officia veritatis ea odit beatae eveniet ad distinctio nam velit ex quos cupiditate vel quo nemo commodi, voluptatibus veniam provident! Eum?</p>
+                    <h3 class="font-bebas-neue text-3xl text-[#363958] font-medium titleblack mt-5">Women Leather Jacket</h3>
+                    <p class="font-roboto-sec text-base font-normal text-[#3E3E3E] mt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic officia veritatis ea odit beatae eveniet ad distinctio nam velit ex quos cupiditate vel quo nemo commodi, voluptatibus veniam provident! Eum?</p>
                     <div class="flex items-center justify-between">
-                        <p class="Bebas Neue text-3xl font-medium #FABE4C mt-5">$234</p>
+                        <p class="font-bebas-neue text-3xl font-medium text-[#FABE4C] mt-5">$234</p>
                         <a href=""><button class="bg-gradient-to-t from-lime-600 to-lime-500 px-8 py-4 mt-5 border border-none rounded-md text-white robotosec text-sm font-semibold uppercase"><i class="fa-solid fa-cart-shopping"> Buy Now</i></button></a>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Men Section Starts -->
-        <section class="px-20 my-24">
+        <section class="md:px-20 md:my-24">
             <div>
-                <h2 class="Bebas Neue text-5xl font-medium uppercase titleblack">Men Jacket</h2>
+                <h2 class="Bebas Neue text-5xl font-medium uppercase titleblack md:items-center md:justify-center">Men Jacket</h2>
             </div>
-            <div class="flex my-7 gap-5">
+            <div class="md:flex my-7 gap-5">
                 <div class="border-none rounded-2xl shadow-xl p-3">
                     <div class="bg-gray-100 px-14 py-10 border-0 rounded-2xl">
                         <img src="./images/jacket-4.png" alt="">
@@ -122,6 +115,41 @@
                         <a href=""><button class="bg-gradient-to-t from-lime-600 to-lime-500 px-8 py-4 mt-5 border border-none rounded-md text-white robotosec text-sm font-semibold uppercase"><i class="fa-solid fa-cart-shopping"> Buy Now</i></button></a>
                     </div>
                 </div>
+            </div>
+        </section>
+        <!-- Service Section Starts -->
+        <section class="flex flex-col-reverse md:flex md:flex-row items-center justify-center px-20 my-24 gap-10">
+            <div class="w-full">
+                <div class="flex items-center justify-center border-none rounded-2xl shadow-xl p-5 gap-12">
+                    <div>
+                        <img src="./icons/house.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="Bebas Neue text-3xl font-medium titleblack mt-5">Find the Perfect Fit</h3>
+                        <p class="mt-5">Everybody is different, which is why we offer styles for every body.</p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center border-none rounded-2xl shadow-xl p-5 gap-12">
+                    <div>
+                        <img src="./icons/box.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="Bebas Neue text-3xl font-medium titleblack mt-5">Find the Perfect Fit</h3>
+                        <p class="mt-5">Everybody is different, which is why we offer styles for every body.</p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center border-none rounded-2xl shadow-xl p-5 gap-12">
+                    <div>
+                        <img src="./icons/question.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="Bebas Neue text-3xl font-medium titleblack mt-5">Find the Perfect Fit</h3>
+                        <p class="mt-5">Everybody is different, which is why we offer styles for every body.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full p-5">
+                <img class="h-full w-full object-cover" src="./images/shopping.png" alt="">
             </div>
         </section>
     </main>
